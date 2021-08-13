@@ -1,0 +1,3 @@
+rootProject.name='Food Delivery System'
+include ':core'
+include ':admin'

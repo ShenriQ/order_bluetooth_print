@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.app.urantia.UserInterface.Activities.ChatDetailsActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar_chat" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/inputView"
+        android:layout_below="@+id/toolbar"
+        android:dividerHeight="0dp"
+        android:paddingTop="10dp"
+        android:stackFromBottom="true"
+        android:transcriptMode="normal"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        android:orientation="vertical"
+        tools:listitem="@layout/chat_text_item_2" />
+    <!--tools:listitem="@layout/chat_text_item_2"-->
+
+    <RelativeLayout
+        android:id="@+id/inputView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingTop="10dp"
+        android:paddingBottom="5dp">
+
+<!--        <ImageView-->
+<!--            android:id="@+id/attachment"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_centerVertical="true"-->
+<!--            android:layout_gravity="center_vertical"-->
+<!--            android:layout_marginEnd="-15dp"-->
+<!--            android:contentDescription="BACK"-->
+<!--            android:padding="15dp"-->
+<!--            android:src="@drawable/plus" />-->
+
+        <EditText
+            android:id="@+id/msgBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_margin="@dimen/screen_padding"
+            android:background="@drawable/shape_round_edge"
+            android:backgroundTint="@color/grey_200"
+            android:drawablePadding="7dp"
+            android:hint="請在此輸入訊息"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            tools:text="" />
+
+        <ImageView
+            android:id="@+id/send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_alignTop="@+id/msgBox"
+            android:layout_alignBottom="@+id/msgBox"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="10dp"
+            android:padding="5dp"
+            android:tint="@color/grey_600"
+            android:src="@drawable/send" />
+    </RelativeLayout>
+</RelativeLayout>

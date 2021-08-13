@@ -1,0 +1,215 @@
+{
+  "project_info": {
+    "project_number": "231489865339",
+    "firebase_url": "https://user-f06f7.firebaseio.com",
+    "project_id": "user-f06f7",
+    "storage_bucket": "user-f06f7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:231489865339:android:459bd908c378614b1744de",
+        "android_client_info": {
+          "package_name": "com.ecbyheart.admin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "231489865339-jsduf2gmt5q1glukb22fmrmg738ardla.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDgUxIQiGnAxYjK4L9EjrTsX6BGQQvM4I8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "231489865339-jsduf2gmt5q1glukb22fmrmg738ardla.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "231489865339-6t7p853qqq8pj3jc56vba64blq4s1l01.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.hkposstore.user"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:231489865339:android:3d87ee5459048f8f1744de",
+        "android_client_info": {
+          "package_name": "com.ecbyheart.user"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "231489865339-jsduf2gmt5q1glukb22fmrmg738ardla.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDgUxIQiGnAxYjK4L9EjrTsX6BGQQvM4I8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "231489865339-jsduf2gmt5q1glukb22fmrmg738ardla.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "231489865339-6t7p853qqq8pj3jc56vba64blq4s1l01.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.hkposstore.user"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:231489865339:android:3a14530e1f2e89c01744de",
+        "android_client_info": {
+          "package_name": "com.posstoreapp.admin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "231489865339-9o8eoaua17t8hcdi2ua05tr6l9p12hs5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.posstoreapp.admin",
+            "certificate_hash": "13efe217c918586c88c24812f0ea603d866b0b16"
+          }
+        },
+        {
+          "client_id": "231489865339-jsduf2gmt5q1glukb22fmrmg738ardla.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDgUxIQiGnAxYjK4L9EjrTsX6BGQQvM4I8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "231489865339-jsduf2gmt5q1glukb22fmrmg738ardla.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "231489865339-6t7p853qqq8pj3jc56vba64blq4s1l01.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.hkposstore.user"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:231489865339:android:9e6a9aeec665aac01744de",
+        "android_client_info": {
+          "package_name": "com.posstoreapp.driver"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "231489865339-3l0vef13aulguph5uuqn3r6tdfj5r93q.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.posstoreapp.driver",
+            "certificate_hash": "af9b056baa2cb3d573143fdd755e200c915a0544"
+          }
+        },
+        {
+          "client_id": "231489865339-jsduf2gmt5q1glukb22fmrmg738ardla.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDgUxIQiGnAxYjK4L9EjrTsX6BGQQvM4I8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "231489865339-jsduf2gmt5q1glukb22fmrmg738ardla.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "231489865339-6t7p853qqq8pj3jc56vba64blq4s1l01.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.hkposstore.user"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:231489865339:android:aafbd2f49605f2511744de",
+        "android_client_info": {
+          "package_name": "com.posstoreapp.user"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "231489865339-9q0vseuos9k7ccurscbcghcrlf4f4fo2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.posstoreapp.user",
+            "certificate_hash": "f8e980c694860b4cb9d6b6e2fcddfadd0e5691f9"
+          }
+        },
+        {
+          "client_id": "231489865339-jsduf2gmt5q1glukb22fmrmg738ardla.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDgUxIQiGnAxYjK4L9EjrTsX6BGQQvM4I8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "231489865339-jsduf2gmt5q1glukb22fmrmg738ardla.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "231489865339-6t7p853qqq8pj3jc56vba64blq4s1l01.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.hkposstore.user"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

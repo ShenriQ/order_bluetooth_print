@@ -1,0 +1,68 @@
+Moduler approch:
+Core Library:
+Plugins will not get imported in modules
+	android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:name=".Core"
+        android:roundIcon="@mipmap/ic_launcher_round"
+
+defaultConfig {
+	//applicationId "core.example"
+        minSdkVersion 22
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+
+-Basic Libraries
+    api 'io.nlopez.smartlocation:library:3.3.3'
+    api 'com.google.android.gms:play-services-location:16.0.0'
+    api 'com.google.code.gson:gson:2.8.5'
+    api 'com.github.bumptech.glide:glide:4.9.0'
+    api 'de.hdodenhof:circleimageview:3.0.0'
+    api "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+
+-FCM:
+Module Depandancy
+//FCM
+    api 'com.google.firebase:firebase-messaging:20.1.1'
+Project Dependancy
+    classpath 'com.google.gms:google-services:4.2.0'
+
+Module 1:
+google-services.json file in module folder
+
+Plugins always required to implement in module 
+	android:name=".WeatherApp"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        tools:replace="android:name"// IMPORTANT: replacing core name here
+
+	<service
+            android:name=".Services.MyFirebaseMessagingService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <!-- Set custom default icon. This is used when no icon is set for incoming notification messages.
+     See README(https://goo.gl/l4GJaQ) for more. -->
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/ic_launcher_background" />
+        <!-- Set color used with incoming notification messages. This is used when no color is set for the incoming notification message. See README(https://goo.gl/6BKBk7) for more. -->
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/colorAccent" />
+
+Plugin Depandancy
+	apply plugin: 'com.google.gms.google-services'
+
+Module Depandancy
+	implementation project(path: ':core')

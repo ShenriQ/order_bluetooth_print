@@ -1,0 +1,571 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        layout="@layout/toolbar_main"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/white"
+        app:layout_constraintBottom_toTopOf="@id/save"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingHorizontal="20dp"
+        android:paddingVertical="10dp">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="13dp"
+            android:paddingHorizontal="7dp"
+            android:text="@string/username"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:background="@drawable/shape_edittext"
+            android:hint="James"
+            android:imeOptions="actionNext"
+            android:inputType="text"
+            android:maxLines="1"
+            android:textColorHint="@color/grey_600" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="13dp"
+            android:paddingHorizontal="7dp"
+            android:text="@string/phone_number"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/phone"
+            android:focusable="false"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:hint="1234568"
+            android:background="@drawable/shape_edittext"
+            android:textColorHint="@color/grey_600" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="13dp"
+            android:paddingHorizontal="7dp"
+            android:text="@string/email"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:background="@drawable/shape_edittext"
+            android:hint="James@outlook.com"
+            android:textColorHint="@color/grey_600"
+            android:imeOptions="actionDone"
+            android:maxLines="1"
+            android:inputType="textEmailAddress"/>
+        <TextView
+            android:id="@+id/address_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="13dp"
+            android:paddingHorizontal="7dp"
+            android:text="@string/delivery_address"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/address"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:background="@drawable/shape_edittext"
+            android:imeOptions="actionNext"
+            android:inputType="text"
+            android:maxLines="1"
+            android:textColorHint="@color/grey_600" />
+        <LinearLayout
+            android:id="@+id/admin_customerdetail_area"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/user_points_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="13dp"
+                android:paddingHorizontal="7dp"
+                android:text="用戶點"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/user_points"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:background="@drawable/shape_edittext"
+                android:inputType="number"
+                android:textColorHint="@color/grey_600" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="13dp"
+                android:paddingHorizontal="7dp"
+                android:text="登記日期"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/registered_date"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:background="@drawable/shape_edittext"
+                android:imeOptions="actionNext"
+                android:inputType="text"
+                android:maxLines="1"
+                android:textColorHint="@color/grey_600" />
+
+            <TextView
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="13dp"
+                android:paddingHorizontal="7dp"
+                android:text="地區 1"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <EditText
+                android:visibility="gone"
+                android:id="@+id/city_name"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:background="@drawable/shape_edittext"
+                android:imeOptions="actionNext"
+                android:inputType="text"
+                android:maxLines="1"
+                android:textColorHint="@color/grey_600" />
+
+            <TextView
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="13dp"
+                android:paddingHorizontal="7dp"
+                android:text="地區 2"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <EditText
+                android:visibility="gone"
+                android:id="@+id/region_name"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:background="@drawable/shape_edittext"
+                android:imeOptions="actionNext"
+                android:inputType="text"
+                android:maxLines="1"
+                android:textColorHint="@color/grey_600" />
+
+            <TextView
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="13dp"
+                android:paddingHorizontal="7dp"
+                android:text="地區 3"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <EditText
+                android:visibility="gone"
+                android:id="@+id/area_name"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:background="@drawable/shape_edittext"
+                android:imeOptions="actionNext"
+                android:inputType="text"
+                android:maxLines="1"
+                android:textColorHint="@color/grey_600" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/driver_setting_area"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="13dp"
+            android:layout_marginBottom="30dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="13dp"
+                android:paddingHorizontal="7dp"
+                android:text="地區 1"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <Spinner
+                android:id="@+id/citySpinner"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:background="@drawable/shape_spinner"
+                android:hint="star city" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="13dp"
+                android:paddingHorizontal="7dp"
+                android:text="地區 2"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <Spinner
+                android:id="@+id/regionSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:background="@drawable/shape_spinner"
+                android:hint="north" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="13dp"
+                android:paddingHorizontal="7dp"
+                android:text="地區 3"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <Spinner
+                android:id="@+id/areaSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:background="@drawable/shape_spinner"
+                android:hint="north" />
+
+            <TextView
+                android:id="@+id/driver_level_txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="13dp"
+                android:paddingHorizontal="7dp"
+                android:text="管理範疇設定"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <RadioGroup
+                android:id="@+id/driver_level"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rd_level1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Level 1" />
+
+                <RadioButton
+                    android:id="@+id/rd_level2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Level 2" />
+
+                <RadioButton
+                    android:id="@+id/rd_level3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Level 3" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="13dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/superadmin_setting"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingVertical="12dp"
+                >
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingHorizontal="7dp"
+                    android:text="管理範疇設定"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+                <CheckBox
+                    android:id="@+id/cb_super_admin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="超级管理员" />
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/grey_200" />
+
+            <LinearLayout
+                android:id="@+id/permission_area"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="12dp"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <CheckBox
+                        android:id="@+id/cb_can_admins"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/menu_admins" />
+
+                    <CheckBox
+                        android:id="@+id/cb_can_service"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginTop="14dp"
+                        android:text="@string/menu_services" />
+
+                    <CheckBox
+                        android:id="@+id/cb_can_content"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="14dp"
+                        android:layout_weight="1"
+                        android:text="@string/menu_content" />
+
+                    <CheckBox
+                        android:id="@+id/cb_can_userpoint"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="14dp"
+                        android:layout_weight="1"
+                        android:text="@string/menu_userpoint" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <CheckBox
+                        android:id="@+id/cb_can_customers"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/menu_customers" />
+
+                    <CheckBox
+                        android:id="@+id/cb_can_order"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="14dp"
+                        android:layout_weight="1"
+                        android:text="@string/menu_orders" />
+
+                    <CheckBox
+                        android:id="@+id/cb_can_salesreport"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="14dp"
+                        android:layout_weight="1"
+                        android:text="@string/menu_report" />
+
+                    <CheckBox
+                        android:id="@+id/cb_can_fcm"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="14dp"
+                        android:layout_weight="1"
+                        android:text="@string/menu_fcm" />
+
+<!--                    <CheckBox-->
+<!--                        android:id="@+id/cb_can_chat"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginTop="14dp"-->
+<!--                        android:layout_weight="1"-->
+<!--                        android:text="@string/menu_chat" />-->
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <CheckBox
+                        android:id="@+id/cb_can_product"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/menu_products" />
+
+                    <CheckBox
+                        android:id="@+id/cb_can_booking"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="14dp"
+                        android:layout_weight="1"
+                        android:text="@string/menu_booking" />
+
+                    <CheckBox
+                        android:id="@+id/cb_can_coupon"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="14dp"
+                        android:layout_weight="1"
+                        android:text="@string/menu_coupons" />
+
+                    <CheckBox
+                        android:id="@+id/cb_can_email"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="14dp"
+                        android:layout_weight="1"
+                        android:text="@string/menu_email" />
+<!--                    <View-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="32dp"-->
+<!--                        android:layout_marginTop="14dp" />-->
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/admin_customer_orderhistory_area"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="13dp"
+            android:layout_marginBottom="30dp"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="56dp" >
+                <LinearLayout
+                    android:id="@+id/product_tab"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    >
+                    <Button
+                        android:id="@+id/product_btn"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        style="@style/TransButton"
+                        android:textColor="#3E5481"
+                        android:textFontWeight="600"
+                        android:text="產品訂單紀錄"
+                        />
+                    <View
+                        android:id="@+id/product_indicator"
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:background="#FF6464"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/service_tab"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    >
+                    <Button
+                        android:id="@+id/service_btn"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        style="@style/TransButton"
+                        android:textFontWeight="600"
+                        android:text="服務預訂紀錄"
+                        android:textColor="@color/secondTextColor"
+                        />
+                    <View
+                        android:id="@+id/service_indicator"
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:background="@color/white"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:descendantFocusability="blocksDescendants">
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/order_history_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    />
+            </RelativeLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+    </ScrollView>
+    <Button
+        android:id="@+id/save"
+        style="@style/RoundButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="40dp"
+        android:layout_marginHorizontal="20dp"
+        android:text="確認"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>

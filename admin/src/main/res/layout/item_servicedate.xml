@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:orientation="vertical">
+<View
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:background="@color/grey_200"
+    android:layout_below="@+id/remove"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/selectableItemBackground"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingLeft="0dp"
+        android:paddingTop="12dp"
+        android:paddingRight="8dp"
+        android:paddingBottom="12dp">
+
+        <ImageButton
+            android:id="@+id/remove"
+            android:layout_width="22dp"
+            android:layout_height="24dp"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/trash"
+            android:padding="5dp" />
+
+        <TextView
+            android:id="@+id/dateLabel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="10dp"
+            android:layout_weight="1"
+            android:text="Lorem Ispem"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/arrowImg"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            tools:srcCompat="@drawable/arrow_down" />
+
+        <ImageButton
+            android:id="@+id/add"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_marginStart="15dp"
+            android:background="@drawable/plus_circle"
+            android:padding="5dp" />
+    </LinearLayout>
+<View
+    android:id="@+id/bar"
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:background="@color/grey_200"
+    android:layout_below="@+id/remove"/>
+
+<LinearLayout
+    android:id="@+id/timeslots_area"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:visibility="gone"
+    >
+</LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".UI.Activities.CititesListActivity">
+
+    <include
+        layout="@layout/toolbar_main"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!--<EditText
+        android:id="@+id/search"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:background="@drawable/shape_round_edge"
+        android:backgroundTint="@color/grey_200"
+        android:hint="Search Coupons"
+        android:gravity="center_vertical"
+        android:layout_marginTop="20dp"
+        android:paddingStart="25dp"
+        android:paddingEnd="20dp"
+        android:imeOptions="actionSearch"
+        android:textSize="18sp"
+        android:textColor="@color/grey_600"
+        android:drawableEnd="@android:drawable/ic_menu_search"
+        android:drawableTint="@color/grey_600"
+        android:layout_marginHorizontal="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />-->
+    <EditText
+        android:id="@+id/city"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/shape_round_edge"
+        android:backgroundTint="@color/grey_200"
+        android:drawableTint="@color/grey_600"
+        android:gravity="center_vertical"
+        android:hint="@string/add_city"
+        android:imeOptions="actionSearch"
+        android:paddingStart="25dp"
+        android:paddingEnd="20dp"
+        android:textColor="@color/grey_600"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/cityCode"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+    <EditText
+        android:id="@+id/cityCode"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/shape_round_edge"
+        android:backgroundTint="@color/grey_200"
+        android:drawableTint="@color/grey_600"
+        android:gravity="center_vertical"
+        android:hint="@string/city_code"
+        android:imeOptions="actionSearch"
+        android:paddingStart="25dp"
+        android:paddingEnd="20dp"
+        android:textColor="@color/grey_600"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/add"
+        app:layout_constraintStart_toEndOf="@+id/city"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+    <ImageButton
+        android:id="@+id/add"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="10dp"
+        android:background="@color/transparent"
+        android:src="@drawable/add"
+        app:layout_constraintBottom_toBottomOf="@+id/city"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/city" />
+
+    <View
+        android:id="@+id/bar"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginVertical="20dp"
+        android:layout_marginHorizontal="15dp"
+        android:background="@color/grey_400"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/city" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/listView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        android:paddingBottom="10dp"
+        android:visibility="visible"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintBottom_toTopOf="@+id/addCoupon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/city"
+        tools:listitem="@layout/item_city" />
+
+    <Button
+        android:id="@+id/addCoupon"
+        style="@style/SquareButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Add Coupon"
+        android:textAllCaps="false"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

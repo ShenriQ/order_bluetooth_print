@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.ecbyheart.admin">
+
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/icon"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="android:theme">
+        <activity android:name=".UI.Activities.ReportActivity" />
+        <activity android:name=".UI.Activities.BookingsActivity" />
+        <activity android:name=".UI.Activities.PrintActivity" />
+        <activity android:name=".UI.Activities.AdActivity" />
+        <activity android:name=".UI.Activities.LoginActivity" />
+        <activity android:name=".UI.Activities.RegisterActivity" />
+        <activity android:name=".UI.Activities.AdminVerifyActivity" />
+        <activity android:name=".UI.Activities.AdminHomeActivity" />
+        <activity android:name=".UI.Activities.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".UI.Activities.OrdersListActivity" />
+        <activity android:name=".UI.Activities.AdminOrderDetailsActivity" />
+    </application>
+
+</manifest>

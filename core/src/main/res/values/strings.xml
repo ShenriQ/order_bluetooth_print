@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="app_name">用戶層</string>
+    <string name="please_wait">請稍等</string>
+    <string name="press_to_exit">請按此退出</string>
+
+    <string name="details">接受</string>
+    <string name="done">完成</string>
+    <string name="city_code">地區代碼</string>
+
+    <string name="username">用戶名稱</string>
+    <string name="phone_number">電話號碼</string>
+    <string name="email">電子電郵</string>
+    <string name="save">確定</string>
+    <string name="order_total">訂單總額</string>
+    <string name="order_no">訂單編號</string>
+    <string name="order_date">訂單日期</string>
+    <string name="order_time">訂單時間</string>
+    <string name="order_quantity">訂單數量</string>
+    <string name="confirm">確定</string>
+    <string name="telephone">電話號碼</string>
+    <string name="login">登入</string>
+    <string name="dont_have_an_account_register">立即登記 享用伴百味</string>
+    <string name="skip">略過</string>
+    <string name="agreement_on_our_policy">同意伴百味的政策</string>
+    <string name="agreement_on_receive_promotions">接收推廣及通知</string>
+    <string name="register">登記</string>
+    <string name="already_have_an_account_login">已有帳戶？馬上登入</string>
+
+    <string name="title_home">菜單</string>
+    <string name="title_order">訂單</string>
+    <string name="title_discounts">優惠</string>
+    <string name="title_account">帳戶</string>
+    <string name="proceed">確定</string>
+    <string name="today">今日</string>
+    <string name="date">日期</string>
+    <string name="cart">查看購物籃</string>
+    <string name="please_provide_address">請提供地址</string>
+    <string name="cart_js_empty">購物車暫時是空的</string>
+    <string name="select_time">選擇時間</string>
+    <string name="delivery_address">送貨地址</string>
+    <string name="products">產品</string>
+    <string name="sub_total">小計</string>
+    <string name="coupon">優惠碼</string>
+    <string name="delivery_will_arrive_in_one_hour">需時送到</string>
+    <string name="items">產品</string>
+    <string name="order_successfull">成功落單！</string>
+    <string name="chats">通訊</string>
+    <string name="enter_address">輸入地址</string>
+    <string name="address">地址</string>
+    <string name="city">地區</string>
+    <string name="login_to_continue">登入後繼續</string>
+    <string name="required">必須</string>
+    <string name="cancel">取消</string>
+    <string name="enter_name">請輪入名稱</string>
+    <string name="enter_number">請輸入電話號碼</string>
+    <string name="enter_email">請輸入電子電郵</string>
+    <string name="order_details">訂單詳細</string>
+    <string name="invalid_phone_number">錯誤電話號碼</string>
+    <string name="invalid_code">錯誤代碼</string>
+    <string name="no_user_registered_with_this_number">沒有此電話號碼登記</string>
+    <string name="added_to_cart">已加入購物車</string>
+    <string name="add_atleast_one_item">最少一個產品加入購物車</string>
+    <string name="add_atleast_one_service">最少一個服務加入購物車</string>
+    <string name="sold_out">暫時售罄</string>
+    <string name="add_to_cart">加入購物車</string>
+    <string name="please_accept_agreement">請接受伴百味的政策及協議</string>
+    <string name="please_allow_promotions">請接受伴百味的優惠</string>
+    <string name="number_already_registered">此電話號碼已有用戶使用中</string>
+    <string name="turn_off_notifications">是否關閉推廣及通知?</string>
+    <string name="turn_on_notifications">是否開啟推廣及通知?</string>
+    <string name="change_status">更改狀態</string>
+    <string name="about_us">關於我們</string>
+    <string name="yes">是</string>
+    <string name="no">不是</string>
+    <string name="account_information">帳戶資料</string>
+    <string name="receive_notifications">接收推廣及通知</string>
+    <string name="logout">登出</string>
+    <string name="you_don_t_have_any_orders_right_now">暫時沒有任何訂單</string>
+    <string name="my_orders">我的訂單</string>
+    <string name="history">訂單紀錄</string>
+    <string name="stock">庫存量</string>
+    <string name="out_of_stock">暫時售罄</string>
+
+    <string name="neww">新訂單</string>
+    <string name="inprogress">處理中</string>
+    <string name="completed">已完成</string>
+    <string name="complete_delivery">完成送到</string>
+    <string name="back">返回</string>
+    <string name="completed_date">完成日期</string>
+    <string name="completed_time">完成時間</string>
+    <string name="customer_name">客戶名稱</string>
+    <string name="phone">電話號碼</string>
+    <string name="profile">帳戶</string>
+    <string name="completed_orders">完成訂單</string>
+    <string name="inprogress_orders">處理中訂單</string>
+    <string name="new_orders">最新訂單</string>
+    <string name="session_ended">已結束</string>
+    <string name="admin_will_be_assigned_shortly">請稍等，管理員會盡快回覆閣下。</string>
+    <string name="user_logout">登出</string>
+
+
+    <string name="title">標題</string>
+    <string name="description_optional">描述(可選)</string>
+    <string name="image">圖片</string>
+    <string name="add_category">新增類別</string>
+    <string name="add_service_category">新增服務類別</string>
+    <string name="enter_description">輸入描述</string>
+    <string name="select_image">選擇圖片</string>
+    <string name="select_avail_dates">選擇可用日期</string>
+    <string name="enter_title">輸入標題</string>
+    <string name="invalid_file">上載文件無效</string>
+    <string name="enter_text">輸入文字</string>
+    <string name="delivery_time">送貨時間</string>
+    <string name="terms">條款及細則</string>
+    <string name="privacy_policy">私隱政策</string>
+    <string name="important_notes">重要消息</string>
+    <string name="banner">旗帜</string>
+    <string name="content">內容</string>
+    <string name="content_title">內容標題</string>
+    <string name="add_coupon">新增優惠碼</string>
+    <string name="update_coupon">更新優惠碼</string>
+    <string name="delete">刪除</string>
+    <string name="you_want_to_delete_coupon">確定刪除此優惠碼？</string>
+    <string name="enter_code">輸入代碼</string>
+    <string name="enter_discount_value">輸入優惠額</string>
+    <string name="select_from_date">選擇日期</string>
+    <string name="enter_something">輸入內容</string>
+    <string name="new_year_discount">新一年優惠</string>
+    <string name="coupon_code">優惠碼</string>
+    <string name="discount">優惠</string>
+    <string name="duration">活動時間</string>
+    <string name="from">開始活動日期</string>
+    <string name="to">終止活動日期</string>
+    <string name="add_product">新增產品</string>
+    <string name="you_want_to_delete_product">確定刪除此產品？</string>
+    <string name="update_product">更新產品</string>
+    <string name="enter_price">輸入價錢</string>
+    <string name="enter_stock_count">輸入產品數量</string>
+    <string name="vanilla_cake">Vanilla cake</string>
+    <string name="price">價錢</string>
+    <string name="category">類別</string>
+    <string name="delete_i">刪除</string>
+    <string name="you_want_to_delete_admin">確定刪除此管理員？</string>
+    <string name="delete_admin">刪除</string>
+    <string name="admin_panel">管理員後台</string>
+    <string name="want_to_offline">是否確定下線?</string>
+    <string name="want_to_online">是否確定上線?</string>
+    <string name="menu_admins">管理員資料</string>
+    <string name="menu_customers" >客戶資料</string>
+    <string name="menu_categories">類別</string>
+    <string name="menu_products">產品</string>
+    <string name="menu_chat">即時通訊</string>
+    <string name="menu_orders">產品訂單</string>
+    <string name="menu_coupons">優惠碼設定</string>
+    <string name="menu_content">內容設定</string>
+    <string name="menu_cities">地區</string>
+    <string name="menu_fcm">推送通知系統</string>
+    <string name="menu_email">EDM電郵系統</string>
+    <string name="menu_banner">廣告</string>
+    <string name="menu_service_cats">服務類別</string>
+    <string name="menu_services">服務</string>
+    <string name="menu_booking">預約訂單</string>
+    <string name="menu_report">銷售報告</string>
+    <string name="menu_userpoint">用戶積分設定</string>
+    <string name="menu_shipping">設定運費</string>
+    <string name="menu_inventory">庫存清單</string>
+    <string name="admins">管理員</string>
+    <string name="booking_total">預訂總額</string>
+    <string name="online">上線</string>
+    <string name="last_seen">最後上線日期</string>
+    <string name="update">更新</string>
+    <string name="want_to_update_banner">確定更新此BANNER？</string>
+    <string name="categories">類別</string>
+    <string name="search_category">搜尋類別</string>
+    <string name="want_to_delete_city">確定更新此地區？</string>
+    <string name="cities">地區</string>
+    <string name="enter_city_name">請輸入地區</string>
+    <string name="add_city">新增地區</string>
+    <string name="want_to_delete_coupon">確定刪除此優惠碼？</string>
+    <string name="coupons">優惠碼</string>
+    <string name="search_coupons">搜尋優惠碼</string>
+    <string name="orders">訂單</string>
+    <string name="search_orders">搜尋訂單</string>
+    <string name="search_bookings">搜尋預訂</string>
+    <string name="search_products">搜尋產品</string>
+    <string name="status_updated">狀態更新</string>
+    <string name="until">直至</string>
+    <string name="note">特別指引</string>
+
+    <string-array name="categories">
+        <item>選擇類別</item>
+    </string-array>
+
+    <string-array name="order_types">
+        <item>新訂單</item>
+        <item>已完成</item>
+    </string-array>
+
+    <string-array name="booking_types">
+        <item>新預訂</item>
+        <item>已完成</item>
+    </string-array>
+
+    <string name="enter_card_details">請輸入信用卡資料</string>
+    <string name="card">信用卡</string>
+    <string name="cash_on_delivery">現金</string>
+    <string name="update_category">更新類別 </string>
+    <string name="update_service_category">更新服務類別 </string>
+    <string name="you_want_to_delete_category">確定刪除此類別？</string>
+    <string name="payment_methodd">付款方法：</string>
+    <string name="payment_method">付款方法 </string>
+    <string name="enter_city_code">請輸入地區代碼</string>
+    <string name="city_added">新增地區</string>
+    <string name="city_deleted">刪除地區</string>
+    <string name="delivery_time_updtaed">外賣速遞時間更新！</string>
+    <string name="coupon_deleted"> 優惠券已刪除</string>
+    <string name="invalid_coupon">此優惠券已無效</string>
+    <string name="already_used_coupon">此優惠券已使用</string>
+    <string name="invalid_expired_coupon">此優惠券已無效</string>
+    <string name="coupon_updated">此優惠券已更新</string>
+    <string name="coupon_added">新增優惠券</string>
+    <string name="menu_drivers">送遞員</string>
+    <string name="drivers">送遞員</string>
+    <string name="you_want_to_delete_driver">確定刪除送遞員</string>
+    <string name="search">搜尋</string>
+    <string name="push">消息</string>
+    <string name="resend_code">再發一次驗證碼</string>
+    <string name="verify">審核</string>
+</resources>

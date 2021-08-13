@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UI.Activities.SendEmailActivity"
+    >
+
+    <include
+        layout="@layout/toolbar_main"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    至
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/save"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingHorizontal="20dp"
+            android:paddingVertical="10dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="13dp"
+                    android:paddingHorizontal="7dp"
+                    android:text="至"
+                    android:textColor="@color/grey_700"
+                    android:textSize="14sp" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingHorizontal="7dp"
+                    android:layout_marginVertical="13dp"
+                    android:text="(用逗號分隔電子郵件。)"
+                    android:textColor="@color/grey_700"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:orientation="vertical">-->
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:orientation="horizontal">-->
+<!--                    <com.google.android.flexbox.FlexboxLayout-->
+<!--                        android:id="@+id/to_email_list"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        app:alignContent="flex_start"-->
+<!--                        app:alignItems="flex_start"-->
+<!--                        app:flexWrap="wrap"-->
+<!--                        app:showDivider="beginning|middle" >-->
+
+<!--                    </com.google.android.flexbox.FlexboxLayout>-->
+
+<!--                </LinearLayout>-->
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginTop="12dp"-->
+<!--                    android:orientation="horizontal">-->
+<!--                    <EditText-->
+<!--                        android:id="@+id/to_email_input"-->
+<!--                        android:layout_width="0dp"-->
+<!--                        android:layout_height="50dp"-->
+<!--                        android:layout_weight="1"-->
+<!--                        android:background="@drawable/shape_edittext"-->
+<!--                        android:hint="輸入電子電郵"-->
+<!--                        android:imeOptions="actionNext"-->
+<!--                        android:inputType="textEmailAddress"-->
+<!--                        android:maxLines="1"-->
+<!--                        android:textColorHint="@color/grey_600" />-->
+
+<!--                    <ImageButton-->
+<!--                        android:id="@+id/addbtn"-->
+<!--                        android:layout_width="50dp"-->
+<!--                        android:layout_height="50dp"-->
+<!--                        android:layout_marginStart="15dp"-->
+<!--                        android:background="@color/transparent"-->
+<!--                        android:src="@drawable/add" />-->
+<!--                </LinearLayout>-->
+
+<!--            </LinearLayout>-->
+            <EditText
+                android:id="@+id/to_email_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textMultiLine"
+                android:background="@drawable/shape_edittext"
+                android:hint="輸入電子電郵"
+                android:imeOptions="actionNext"
+                android:textColorHint="@color/grey_600" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="13dp"
+                android:paddingHorizontal="7dp"
+                android:text="題目"
+                android:textColor="@color/grey_700"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/not_title"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/shape_edittext"
+                android:hint="輸入題目"
+                android:imeOptions="actionNext"
+                android:inputType="text"
+                android:maxLines="1"
+                android:textColorHint="@color/grey_600" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="13dp"
+                android:paddingHorizontal="7dp"
+                android:text="內容"
+                android:textColor="@color/grey_700"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/message"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_edittext"
+                android:gravity="fill_horizontal"
+                android:hint="輸入內容"
+                android:inputType="textMultiLine|text"
+                android:maxLines="8"
+                android:minHeight="150dp"
+                android:textColorHint="@color/grey_600" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="13dp"
+                android:paddingHorizontal="7dp"
+                android:text="@string/image"
+                android:textColor="@color/grey_700"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/selectImage"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@drawable/shape_select_image"
+                android:scaleType="fitXY"
+                android:padding="1dp"
+                android:src="@drawable/placeholder_horizontal" />
+        </LinearLayout>
+    </ScrollView>
+    <Button
+        android:id="@+id/save"
+        style="@style/SquareButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="發送電子郵件"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

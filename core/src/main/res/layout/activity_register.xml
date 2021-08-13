@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+android:layout_height="fill_parent"
+android:id="@+id/splashActivity"
+    android:background="@color/white"
+    >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="25dp"
+            android:orientation="vertical">
+            <ImageButton
+                android:id="@+id/back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:backgroundTint="@color/white"
+                app:srcCompat="@drawable/arrow_back" />
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="註冊"
+                android:textAlignment="center"
+                android:textColor="@color/mainTextColor"
+                android:textStyle="bold"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="32dp"
+                android:layout_marginTop="8dp"
+                android:textAlignment="center"
+                android:text="請在此處註冊您的帳戶"
+                android:textColor="@color/secondTextColor"
+                android:textFontWeight="500"
+                android:textSize="15sp"
+                />
+
+            <EditText
+                android:id="@+id/name"
+                style="@style/MyEditText"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginHorizontal="25dp"
+                android:drawableStart="@drawable/user_black"
+                android:drawablePadding="15dp"
+                android:drawableTint="#022541"
+                android:ems="10"
+                android:hint="@string/username"
+                android:inputType="textPersonName"
+                android:paddingLeft="30dp"
+                android:textColorHint="@color/secondTextColor"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/phone"
+                style="@style/MyEditText"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginHorizontal="25dp"
+                android:layout_marginTop="6dp"
+                android:drawableStart="@drawable/phone"
+                android:drawablePadding="15dp"
+                android:paddingLeft="30dp"
+                android:drawableTint="#022541"
+                android:ems="10"
+                android:hint="輸入您的電話號碼"
+                android:textSize="15sp"
+                android:textColorHint="@color/secondTextColor"
+                android:inputType="phone" />
+
+            <EditText
+                android:id="@+id/email"
+                style="@style/MyEditText"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginHorizontal="25dp"
+                android:layout_marginTop="6dp"
+                android:drawableStart="@drawable/email"
+                android:drawablePadding="15dp"
+                android:paddingLeft="30dp"
+                android:drawableTint="#022541"
+                android:ems="10"
+                android:hint="@string/email"
+                android:textSize="15sp"
+                android:textColorHint="@color/secondTextColor"
+                android:inputType="textEmailAddress" />
+
+
+            <CheckBox
+                android:id="@+id/agreement"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="12dp"
+                android:buttonTint="@color/secondTextColor"
+                android:paddingStart="8dp"
+                android:text="@string/agreement_on_our_policy"
+                android:textColor="@color/secondTextColor" />
+
+            <CheckBox
+                android:id="@+id/promotions"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="6dp"
+                android:buttonTint="@color/secondTextColor"
+                android:paddingStart="8dp"
+                android:text="@string/agreement_on_receive_promotions"
+                android:textColor="@color/secondTextColor" />
+
+            <Button
+                android:id="@+id/register"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="24dp"
+                android:layout_marginHorizontal="25dp"
+                android:text="立即註冊" />
+
+
+        </LinearLayout>
+
+</FrameLayout>

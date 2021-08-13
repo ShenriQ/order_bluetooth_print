@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="25dp"
+    android:layout_marginTop="60dp"
+    android:layout_marginRight="25dp"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginBottom="20dp"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="設定服務時段"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="12dp"
+        android:paddingBottom="12dp"
+        android:paddingLeft="28dp"
+        android:paddingRight="28dp"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="4dp"
+            android:paddingHorizontal="7dp"
+            android:text="接納人數"
+            android:textColor="@color/grey_700"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/capacity"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/shape_edittext"
+            android:hint="輸入此時段的接納人數"
+            android:imeOptions="actionDone"
+            android:inputType="numberSigned"
+            android:textColor="@color/grey_600" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="4dp"
+            android:paddingHorizontal="7dp"
+            android:text="開始時間"
+            android:textColor="@color/grey_700"
+            android:textSize="14sp" />
+
+        <LinearLayout
+            android:id="@+id/start_picker"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:orientation="vertical"
+            android:background="@drawable/shape_edittext"
+            >
+            <TextView
+                android:id="@+id/start_picker_txt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            </TextView>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="4dp"
+            android:paddingHorizontal="7dp"
+            android:text="結束時間"
+            android:textColor="@color/grey_700"
+            android:textSize="14sp" />
+
+        <LinearLayout
+            android:id="@+id/end_picker"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:orientation="vertical"
+            android:background="@drawable/shape_edittext"
+            >
+            <TextView
+                android:id="@+id/end_picker_txt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            </TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/cancel"
+                style="@style/RoundButton"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:text="取消"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/ok"
+                style="@style/RoundButton"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="12dp"
+                android:text="確定"
+                android:textAllCaps="false" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
